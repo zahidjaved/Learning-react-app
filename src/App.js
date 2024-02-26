@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import React, { useState } from 'react'
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import Formm from './Formm';
+
 
 function App() {
+const [numbers , setNumbers] = useState(" this ")
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+  <div className='container'>
+  <h2> App.js</h2>
+
+<Formm/>
+
+  </div>
+
+   </>
   );
 }
 
