@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 const TextArea = ({ handleUpercase, lowrUpercase, text, handleChange }) => {
   const [myStyle, setMyStyle] = useState({
     color: "black",
@@ -35,6 +36,7 @@ const TextArea = ({ handleUpercase, lowrUpercase, text, handleChange }) => {
           value={text}
           onChange={handleChange}
           style={myStyle}
+          className="border-2 border-indigo-600 "
         />
         <br />
         <button type="button" onClick={handleUpercase}>
@@ -43,13 +45,12 @@ const TextArea = ({ handleUpercase, lowrUpercase, text, handleChange }) => {
         <button type="button" onClick={lowrUpercase}>
           Lowercase
         </button>
-
         <button type="button" onClick={toggle}>
           {bntText}
-        </button>
+        </button>   
       </div>
 
-      <div className="name"></div>
+    
     </>
   );
 };
